@@ -11,3 +11,4 @@ Inspired by the [Admin Dashboard assignment](https://www.theodinproject.com/less
 * HTML5
 * [Normalize.css](http://necolas.github.io/normalize.css)
 * [Material Icons](https://fonts.google.com/icons?icon.set=Material+Icons)
+* [Google Fonts](https://fonts.google.com)
