@@ -15,7 +15,7 @@
     <div class="sidebar-wrapper">
       <!-- SITE HEADING -->
       <header>
-        <h1><span class="material-icons" aria-hidden="true">dashboard</span> Dashboard</h1>
+        <h1><span class="material-icons icon" aria-hidden="true">dashboard</span> Dashboard</h1>
       </header>
       <!-- SIDEBAR NAV -->
       <aside>
@@ -37,187 +37,234 @@
       </aside>
     </div>
     <!-- HEADER -->
-    <header class="header-grid">
-      <div class="grid-item">
+    <header class="header-container">
+      <div class="header-row">
         <!-- SEARCH FORM -->
-        <form role="search" class="search-form" novalidate>
-          <div class="form-group">
-            <span class="material-icons" aria-hidden="true">search</span>
-            <input type="text" name="searchInput" class="search-input" aria-label="search dashboard" id="search-input" autocomplete="off" required />
-          </div>
-        </form>
-      </div>
-      <div class="grid-item">
-        <div class="button-group">
-          <button class="button" aria-label="view notifications">
-            <span class="material-icons-outlined">notifications_active</span>
-          </button>
+        <div class="row-item">
+          <form role="search" class="search-form" novalidate>
+            <div class="form-group">
+              <span class="material-icons search-icon" aria-hidden="true">search</span>
+              <input type="text" name="searchInput" class="search-input" aria-label="search dashboard" id="search-input" autocomplete="off" autocapitalize="off" required />
+            </div>
+          </form>
         </div>
-        <img src="https://dummyimage.com/600x600/e4c0f6/000000.png&text=avatar" alt="profile avatar for @janedoe" />
-        <div class="name">Jane Doe</div>
-      </div>
-      <!-- ACCOUNT HEADING -->
-      <div class="grid-item">
-        <img src="https://dummyimage.com/600x600/e4c0f6/000000.png&text=avatar" alt="profile avatar for @janedoe" />
-        <div class="name-wrapper">
-          <div class="greeting">Hi there,</div>
-          <h2>Jane Doe (@janedoe)</h2>
+        <!-- ACCOUNT INFO -->
+        <div class="row-item">
+          <div class="button-group">
+            <button type="button" class="button notifications-button" aria-label="view notifications">
+              <span class="material-icons-outlined icon">notifications_active</span>
+              <span class="tooltip bold">Notifications</span>
+            </button>
+          </div>
+          <img src="assets/images/avatar-icon-placeholder.png" alt="profile avatar for @janedoe" class="avatar" />
+          <div class="user">
+            <div class="name bold">Jane Doe</div>
+            <div class="username bold">@janedoe</div>
+          </div>
         </div>
       </div>
       <!-- HEADER BUTTONS -->
-      <div class="grid-item header-buttons">
+      <div class="header-row header-buttons">
         <div class="button-group">
-          <button class="button">New</button>
-          <button class="button">Upload</button>
-          <button class="button">Share</button>
+          <button type="button" class="button">New</button>
+          <button type="button" class="button">Upload</button>
+          <button type="button" class="button">Share</button>
         </div>
       </div>
     </header>
     <main>
       <!-- PROJECTS GRID -->
       <div class="col">
-        <h3>Your Projects</h3>
+        <h2>Your Projects</h2>
         <div class="projects-container">
-          <div class="project">
-            <h4 >Project1</h4>
+          <div class="project card">
+            <h3>
+              <a href="" target="_self">Project1</a>
+            </h3>
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ornare fringilla fermentum quam elit conubia et commodo.</p>
             <div class="button-group">
-              <button class="button" aria-label="like project">
+              <button type="button" class="button" aria-label="like project">
                 <span class="material-icons icon">favorite_border</span>
+                <span class="tooltip bold">Like</span>
               </button>
-              <button class="button" aria-label="view project">
+              <button type="button" class="button" aria-label="view project">
                 <span class="material-icons-outlined icon">visibility</span>
+                <span class="tooltip bold">View</span>
               </button>
-              <button class="button" aria-label="add project">
+              <button type="button" class="button" aria-label="add project">
                 <span class="material-icons icon">add_circle_outline</span>
+                <span class="tooltip bold">Add</span>
               </button>
             </div>
           </div>
-          <div class="project">
-            <h4>Project2</h4>
+          <div class="project card">
+            <h3>
+              <a href="" target="_self">Project2</a>
+            </h3>
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ornare fringilla fermentum quam elit conubia et commodo.</p>
             <div class="button-group">
-              <button class="button" aria-label="like project">
+              <button type="button" class="button" aria-label="like project">
                 <span class="material-icons icon">favorite_border</span>
+                <span class="tooltip bold">Like</span>
               </button>
-              <button class="button" aria-label="view project">
+              <button type="button" class="button" aria-label="view project">
                 <span class="material-icons-outlined icon">visibility</span>
+                <span class="tooltip bold">View</span>
               </button>
-              <button class="button" aria-label="add project">
+              <button type="button" class="button" aria-label="add project">
                 <span class="material-icons icon">add_circle_outline</span>
+                <span class="tooltip bold">Add</span>
               </button>
             </div>
           </div>
-          <div class="project">
-            <h4>Project3</h4>
+          <div class="project card">
+            <h3>
+              <a href="" target="_self">Project3</a>
+            </h3>
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ornare fringilla fermentum quam elit conubia et commodo.</p>
             <div class="button-group">
-              <button class="button" aria-label="like project">
+              <button type="button" class="button" aria-label="like project">
                 <span class="material-icons icon">favorite_border</span>
+                <span class="tooltip bold">Like</span>
               </button>
-              <button class="button" aria-label="view project">
+              <button type="button" class="button" aria-label="view project">
                 <span class="material-icons-outlined icon">visibility</span>
+                <span class="tooltip bold">View</span>
               </button>
-              <button class="button" aria-label="add project">
+              <button type="button" class="button" aria-label="add project">
                 <span class="material-icons icon">add_circle_outline</span>
+                <span class="tooltip bold">Add</span>
               </button>
             </div>
           </div>
-          <div class="project">
-            <h4>Project4</h4>
+          <div class="project card">
+            <h3>
+              <a href="" target="_self">Project4</a>
+            </h3>
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ornare fringilla fermentum quam elit conubia et commodo.</p>
             <div class="button-group">
-              <button class="button" aria-label="like project">
+              <button type="button" class="button" aria-label="like project">
                 <span class="material-icons icon">favorite_border</span>
+                <span class="tooltip bold">Like</span>
               </button>
-              <button class="button" aria-label="view project">
+              <button type="button" class="button" aria-label="view project">
                 <span class="material-icons-outlined icon">visibility</span>
+                <span class="tooltip bold">View</span>
               </button>
-              <button class="button" aria-label="add project">
+              <button type="button" class="button" aria-label="add project">
                 <span class="material-icons icon">add_circle_outline</span>
+                <span class="tooltip bold">Add</span>
               </button>
             </div>
           </div>
-          <div class="project">
-            <h4>Project5</h4>
+          <div class="project card">
+            <h3>
+              <a href="" target="_self">Project5</a>
+            </h3>
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ornare fringilla fermentum quam elit conubia et commodo.</p>
             <div class="button-group">
-              <button class="button" aria-label="like project">
+              <button type="button" class="button" aria-label="like project">
                 <span class="material-icons icon">favorite_border</span>
+                <span class="tooltip bold">Like</span>
               </button>
-              <button class="button" aria-label="view project">
+              <button type="button" class="button" aria-label="view project">
                 <span class="material-icons-outlined icon">visibility</span>
+                <span class="tooltip bold">View</span>
               </button>
-              <button class="button" aria-label="add project">
+              <button type="button" class="button" aria-label="add project">
                 <span class="material-icons icon">add_circle_outline</span>
+                <span class="tooltip bold">Add</span>
               </button>
             </div>
           </div>
-          <div class="project">
-            <h4>Project6</h4>
+          <div class="project card">
+            <h3>
+              <a href="" target="_self">Project6</a>
+            </h3>
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ornare fringilla fermentum quam elit conubia et commodo.</p>
             <div class="button-group">
-              <button class="button" aria-label="like project">
+              <button type="button" class="button" aria-label="like project">
                 <span class="material-icons icon">favorite_border</span>
+                <span class="tooltip bold">Like</span>
               </button>
-              <button class="button" aria-label="view project">
+              <button type="button" class="button" aria-label="view project">
                 <span class="material-icons-outlined icon">visibility</span>
+                <span class="tooltip bold">View</span>
               </button>
-              <button class="button" aria-label="add project">
+              <button type="button" class="button" aria-label="add project">
                 <span class="material-icons icon">add_circle_outline</span>
+                <span class="tooltip bold">Add</span>
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <!-- ANNOUNCEMENTS -->
-        <aside class="announcements">
-          <h3>Announcements</h3>
-          <div class="card">
-            <div class="row">
-              <h4>Announcement1</h4>
-              <p>Lorem ipsum odor amet, consectetuer adipiscing elit...</p>
-            </div>
-            <div class="row">
-              <h4>Announcement2</h4>
-              <p>Lorem ipsum odor amet, consectetuer adipiscing elit...</p>
-            </div>
-            <div class="row">
-              <h4>Announcement3</h4>
-              <p>Lorem ipsum odor amet, consectetuer adipiscing elit...</p>
+      <div class="col aside">
+        <aside>
+          <!-- ANNOUNCEMENTS -->
+          <div class="announcements">
+            <h2>Announcements</h2>
+            <div class="card">
+              <div class="row">
+                <h3>
+                  <a href="" target="_self">Announcement1</a>
+                </h3>
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit...</p>
+              </div>
+              <div class="row">
+                <h3>
+                  <a href="" target="_self">Announcement2</a>
+                </h3>
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit...</p>
+              </div>
+              <div class="row">
+                <h3>
+                  <a href="" target="_self">Announcement3</a>
+                </h3>
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit...</p>
+              </div>
             </div>
           </div>
-        </aside>
-        <!-- TRENDING -->
-        <aside class="trending">
-          <h3>Trending</h3>
-          <div class="card">
-            <div class="row">
-              <img src="https://dummyimage.com/600x600/e4c0f6/000000.png&text=avatar" alt="profile avatar for @account1" />
-              <div class="project-info">
-                <div class="username">@account1</div>
-                <div class="project-name">ProjectName</div>
+          <!-- TRENDING -->
+          <div class="trending">
+            <h2>Trending</h2>
+            <div class="card">
+              <div class="row">
+                <img src="assets/images/avatar-icon-placeholder.png" alt="profile avatar for @account1" class="avatar" />
+                <div class="project-info">
+                  <div class="username bold">@account1</div>
+                  <div class="project-name">
+                    <a href="" target="_self">ProjectName</a>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <img src="https://dummyimage.com/600x600/e4c0f6/000000.png&text=avatar" alt="profile avatar for @account2" />
-              <div class="project-info">
-                <div class="username">@account2</div>
-                <div class="project-name">ProjectName</div>
+              <div class="row">
+                <img src="assets/images/avatar-icon-placeholder.png" alt="profile avatar for @account2" class="avatar" />
+                <div class="project-info">
+                  <div class="username bold">@account2</div>
+                  <div class="project-name">
+                    <a href="" target="_self">ProjectName</a>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <img src="https://dummyimage.com/600x600/e4c0f6/000000.png&text=avatar" alt="profile avatar for @account3" />
-              <div class="project-info">
-                <div class="username">@account3</div>
-                <div class="project-name">ProjectName</div>
+              <div class="row">
+                <img src="assets/images/avatar-icon-placeholder.png" alt="profile avatar for @account3" class="avatar" />
+                <div class="project-info">
+                  <div class="username bold">@account3</div>
+                  <div class="project-name">
+                    <a href="" target="_self">ProjectName</a>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <img src="https://dummyimage.com/600x600/e4c0f6/000000.png&text=avatar" alt="profile avatar for @account4" />
-              <div class="username">@account4</div>
-              <div class="project-name">ProjectName</div>
+              <div class="row">
+                <img src="assets/images/avatar-icon-placeholder.png" alt="profile avatar for @account4" class="avatar" />
+                <div class="project-info">
+                  <div class="username bold">@account4</div>
+                  <div class="project-name">
+                    <a href="" target="_self">ProjectName</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </aside>
