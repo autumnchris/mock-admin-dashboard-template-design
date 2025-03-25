@@ -12,3 +12,7 @@ Inspired by the [Admin Dashboard assignment](https://www.theodinproject.com/less
 * [Normalize.css](http://necolas.github.io/normalize.css)
 * [Material Icons](https://fonts.google.com/icons?icon.set=Material+Icons)
 * [Google Fonts](https://fonts.google.com)
+
+## Demo
+
+View project demo at [https://autumnchris.github.io/mock-admin-dashboard-template-design](https://autumnchris.github.io/mock-admin-dashboard-template-design).
