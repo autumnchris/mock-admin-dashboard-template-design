@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto SemiBold";
+  src: url(../assets/fonts/Roboto-SemiBold.ttf);
+}
+
+/* BASE PAGE STYLES */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  background: transparent;
+  font-family: "Roboto Regular", sans-serif;
+  height: 100%;
+  letter-spacing: 1px;
+}
+
+body {
+  background: hsl(0, 0%, 90%);
+  color: hsl(0, 0%, 0%);
+  min-height: 100%;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
+  position: relative;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  padding: 40px 30px 8rem;
+}
+
+footer {
+  bottom: 0;
+  font-size: 0.8rem;
+  left: 0;
+  letter-spacing: 2px;
+  padding: 14px 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto SemiBold", sans-serif;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+h1 {
+  color: #e4c0f6;
+  font-size: 1.3rem;
+}
+
+h1 .icon {
+  font-size: 2rem;
+  vertical-align: bottom;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: #560182;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus,
+button:focus,
+details:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+  -webkit-box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
+  box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
+  outline: none;
+}
+
+button,
+button:hover,
+button:active,
+button:focus,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.bold {
+  font-family: "Roboto SemiBold", sans-serif;
+  font-weight: 600;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (min-width: 910px) {
+  body {
+    padding-left: 230px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h1 .icon {
+    font-size: 2.2rem;
+  }
+}
+
+@media all and (min-width: 1260px) {
+  main {
+    gap: 0;
+    -ms-grid-columns: 3fr 0 1fr;
+    grid-template-columns: 3fr 1fr;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
